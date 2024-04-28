@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Картини по номерах</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Картини по номерах</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Головна</a></li>
+                    <li><a href="#">Про нас</a></li>
+                    <li><a href="#">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <div class="filter-panel">
+            <label for="size-filter">Фільтр по розміру:</label>
+            <select id="size-filter">
+                <option value="all">Усі</option>
+                <option value="small">Мала</option>
+                <option value="medium">Середня</option>
+                <option value="large">Велика</option>
+            </select>
+        </div>
+        <div class="cards-container" id="cards-container">
+
+        </div>
+    </div>
+    <div id="subscribe-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Підпишіться на наші новини, щоб отримувати останні оновлення!</p>
+            <input type="email" id="email-input" placeholder="Введіть ваш email">
+            <button id="subscribe-btn">Підписатися</button>
+            <button id="close-btn">Закрити</button>
+        </div>
+    </div>
+    <div id="ad-modal" class="modal">
+        <div class="modal-content">
+            <p>Ось реклама!</p>
+            <span id="close-ad" class="close">&times;</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
